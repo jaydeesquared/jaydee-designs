@@ -40,11 +40,6 @@ const ContactSection = () => {
     return Object.keys(newErrors).length === 0;
   };
 
-  const encode = (data: Record<string, string>) =>
-    Object.keys(data)
-      .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-      .join('&');
-
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     
@@ -60,28 +55,8 @@ const ContactSection = () => {
     setIsSubmitting(true);
 
     try {
-      // Submit to Netlify Forms
-      const payload: Record<string, string> = {
-        'form-name': 'contact',
-        name: formData.name,
-        email: formData.email,
-        subject: formData.subject,
-        message: formData.message,
-      };
-
-      await fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: encode(payload),
-      });
-
-      toast({
-        title: 'Message sent!',
-        description: 'Thanks for reaching out. I will get back to you shortly.',
-      });
-
-      setFormData({ name: '', email: '', subject: '', message: '' });
-      setErrors({});
+      // Let the browser submit the form to Netlify (more reliable)
+      (e.currentTarget as HTMLFormElement).submit();
     } catch (error) {
       toast({
         title: 'Error',
@@ -121,8 +96,9 @@ const ContactSection = () => {
             <form
               name="contact"
               method="POST"
+              action="/success"
               data-netlify="true"
-              data-netlify-honeypot="bot-field"
+              netlify-honeypot="bot-field"
               onSubmit={handleSubmit}
               className="glass-card p-8 space-y-6"
             >
