@@ -53,10 +53,10 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="pt-20 pb-20 px-4 sm:px-6 lg:px-8 bg-muted/20">
+    <section id="contact" className="pt-16 pb-20 px-4 sm:px-6 lg:px-8 bg-muted/20">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12 animate-fade-in-up">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 mt-6">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             <span className="hero-text">Get In</span> Touch
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
