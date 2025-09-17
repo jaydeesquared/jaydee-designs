@@ -59,10 +59,10 @@ const VideoSection = () => {
   };
 
   return (
-    <section id="videos" className="py-20 px-4 sm:px-6 lg:px-8">
+    <section id="videos" className="pt-20 pb-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16 animate-fade-in-up">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
+        <div className="text-center mb-12 animate-fade-in-up">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 mt-6">
             <span className="hero-text">Video Editing</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
