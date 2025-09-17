@@ -40,33 +40,7 @@ const ContactSection = () => {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    
-    if (!validateForm()) {
-      toast({
-        title: 'Please fix the errors below',
-        description: 'All fields are required and must be valid.',
-        variant: 'destructive',
-      });
-      return;
-    }
-
-    setIsSubmitting(true);
-
-    try {
-      // Let the browser submit the form to Netlify (more reliable)
-      (e.currentTarget as HTMLFormElement).submit();
-    } catch (error) {
-      toast({
-        title: 'Error',
-        description: 'Something went wrong. Please email jaydeesquared93@gmail.com directly.',
-        variant: 'destructive',
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
+  // No onSubmit handler: allow native form POST to Netlify and redirect to success page
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -82,7 +56,7 @@ const ContactSection = () => {
     <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/20">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16 animate-fade-in-up">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             <span className="hero-text">Get In</span> Touch
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -99,7 +73,6 @@ const ContactSection = () => {
               action="/success"
               data-netlify="true"
               netlify-honeypot="bot-field"
-              onSubmit={handleSubmit}
               className="glass-card p-8 space-y-6"
             >
               <input type="hidden" name="form-name" value="contact" />
@@ -124,6 +97,7 @@ const ContactSection = () => {
                       errors.name ? 'border-destructive' : 'border-border'
                     } focus:ring-2 focus:ring-primary focus:border-transparent transition-colors`}
                     placeholder="Your full name"
+                    required
                   />
                   {errors.name && (
                     <p className="mt-2 text-sm text-destructive flex items-center gap-1">
@@ -147,6 +121,7 @@ const ContactSection = () => {
                       errors.email ? 'border-destructive' : 'border-border'
                     } focus:ring-2 focus:ring-primary focus:border-transparent transition-colors`}
                     placeholder="your.email@example.com"
+                    required
                   />
                   {errors.email && (
                     <p className="mt-2 text-sm text-destructive flex items-center gap-1">
@@ -171,6 +146,7 @@ const ContactSection = () => {
                     errors.subject ? 'border-destructive' : 'border-border'
                   } focus:ring-2 focus:ring-primary focus:border-transparent transition-colors`}
                   placeholder="What's your project about?"
+                  required
                 />
                 {errors.subject && (
                   <p className="mt-2 text-sm text-destructive flex items-center gap-1">
@@ -194,6 +170,7 @@ const ContactSection = () => {
                     errors.message ? 'border-destructive' : 'border-border'
                   } focus:ring-2 focus:ring-primary focus:border-transparent transition-colors resize-none`}
                   placeholder="Tell me about your project, timeline, and any specific requirements..."
+                  required
                 />
                 {errors.message && (
                   <p className="mt-2 text-sm text-destructive flex items-center gap-1">
