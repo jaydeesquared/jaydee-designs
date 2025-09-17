@@ -114,10 +114,18 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
+  html {
+    background: var(--gradient-hero);
+    background-attachment: fixed;
+    overscroll-behavior: none;
+  }
+
   body {
     @apply bg-background text-foreground;
     background: var(--gradient-hero);
     background-attachment: fixed;
+    overscroll-behavior: none;
+    overflow-x: hidden;
   }
 }
 
