@@ -9,6 +9,7 @@ import NotFound from "./pages/NotFound";
 import SubtitlingQC from "./pages/SubtitlingQC";
 import VideoEditing from "./pages/VideoEditing";
 import Websites from "./pages/Websites";
+import Contact from "./pages/Contact";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,7 @@ const App = () => (
             <Route path="/subtitling-qc" element={<SubtitlingQC />} />
             <Route path="/video-editing" element={<VideoEditing />} />
             <Route path="/websites" element={<Websites />} />
+            <Route path="/contact" element={<Contact />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

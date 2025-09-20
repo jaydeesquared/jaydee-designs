@@ -36,32 +36,35 @@ const HeroSection = () => {
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
             <Link 
+              to="/video-editing"
+              className="btn-primary flex items-center gap-3 text-lg group"
+            >
+              Video Editing
+              <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+            </Link>
+
+            <Link 
+              to="/websites"
+              className="btn-primary flex items-center gap-3 text-lg group"
+            >
+              Websites
+              <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+            </Link>
+
+            <Link 
               to="/subtitling-qc"
               className="btn-primary flex items-center gap-3 text-lg group"
             >
               Subtitling QC
               <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
             </Link>
-
-            <Link 
-              to="/video-editing"
-              className="btn-secondary flex items-center gap-3 text-lg"
-            >
-              Video Editing
-            </Link>
-
-            <Link 
-              to="/websites"
-              className="btn-secondary flex items-center gap-3 text-lg"
-            >
-              Websites
-            </Link>
             
             <Link 
-              to="/video-editing#contact"
-              className="btn-secondary flex items-center gap-3 text-lg"
+              to="/contact"
+              className="btn-primary flex items-center gap-3 text-lg group"
             >
               Get In Touch
+              <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
 

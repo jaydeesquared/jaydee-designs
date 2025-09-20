@@ -7,10 +7,10 @@ const Navigation = () => {
 
   const navItems = [
     { to: '/', label: 'Home' },
-    { to: '/subtitling-qc', label: 'Subtitling QC' },
     { to: '/video-editing', label: 'Video Editing' },
     { to: '/websites', label: 'Websites' },
-    { to: '/video-editing#contact', label: 'Contact' },
+    { to: '/subtitling-qc', label: 'Subtitling QC' },
+    { to: '/contact', label: 'Contact' },
   ];
 
   const linkBase = 'nav-link px-3 py-2 text-sm font-medium';
