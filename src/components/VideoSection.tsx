@@ -9,6 +9,12 @@ const VideoSection = () => {
       techniques: ['Visual Effects', 'Transition Design', 'Music Video']
     },
     {
+      url: 'https://youtu.be/mnoADIY8eEQ',
+      title: 'Lyric Video Demo',
+      description: 'Professional lyric video demonstration with animated text and visual effects. Perfect synchronisation between music and typography for engaging content.',
+      techniques: ['Typography Animation', 'Lyric Sync', 'Text Effects']
+    },
+    {
       url: 'https://youtu.be/Irx1Tymn2gs',
       title: 'Karaoke Subtitled Wedding Video',
       description: 'Wedding celebration video with karaoke subtitles and emotional moments. Creating memorable keepsakes with professional subtitle integration and heartfelt editing.',
@@ -19,12 +25,6 @@ const VideoSection = () => {
       title: 'Climate Protest Summary Subtitled',
       description: 'Documentary-style summary of climate activism with informative subtitles. Powerful storytelling focused on environmental awareness and social impact.',
       techniques: ['Documentary Style', 'Subtitle Integration', 'Social Impact']
-    },
-    {
-      url: 'https://youtu.be/mnoADIY8eEQ',
-      title: 'Lyric Video Demo',
-      description: 'Professional lyric video demonstration with animated text and visual effects. Perfect synchronisation between music and typography for engaging content.',
-      techniques: ['Typography Animation', 'Lyric Sync', 'Text Effects']
     },
     {
       url: 'https://youtu.be/qLdwM71ZrjQ',
