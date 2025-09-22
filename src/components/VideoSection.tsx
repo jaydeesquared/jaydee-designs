@@ -3,10 +3,10 @@ import { Play, ExternalLink } from 'lucide-react';
 const VideoSection = () => {
   const videos = [
     {
-      url: 'https://youtu.be/vKzclZEsT60',
-      title: 'Multi-instrumental Music Video',
-      description: 'Multi-camera music video featuring various instruments with synchronised editing and creative transitions. Showcasing musical talent through dynamic visual storytelling.',
-      techniques: ['Multi-Camera', 'Music Sync', 'Creative Transitions']
+      url: 'https://youtu.be/glMgKYBMkAU',
+      title: 'Music Video with VFX and Transitions',
+      description: "High-energy music video featuring advanced visual effects and seamless transitions. Creative use of VFX to mimick the VHS opening credits of HBO's Succession.",
+      techniques: ['Visual Effects', 'Transition Design', 'Music Video']
     },
     {
       url: 'https://youtu.be/Irx1Tymn2gs',
@@ -27,22 +27,10 @@ const VideoSection = () => {
       techniques: ['Typography Animation', 'Lyric Sync', 'Text Effects']
     },
     {
-      url: 'https://youtu.be/glMgKYBMkAU',
-      title: 'Music Video with VFX and Transitions',
-      description: 'High-energy music video featuring advanced visual effects and seamless transitions. Creative use of VFX to enhance musical performance and artistic vision.',
-      techniques: ['Visual Effects', 'Transition Design', 'Music Video']
-    },
-    {
       url: 'https://youtu.be/qLdwM71ZrjQ',
       title: 'Multi-Angle Piano with Karaoke',
       description: 'Piano performance captured from multiple angles with karaoke-style lyrics. Professional multi-camera editing showcasing musical performance with sing-along elements.',
       techniques: ['Multi-Angle', 'Piano Performance', 'Karaoke Style']
-    },
-    {
-      url: 'https://youtu.be/Em8V4KJj0vk',
-      title: 'Media Studies A2 Horror Trailer',
-      description: 'Academic horror trailer project demonstrating genre conventions and cinematic techniques. Professional-grade trailer editing for media studies coursework.',
-      techniques: ['Horror Genre', 'Trailer Editing', 'Academic Project']
     },
     {
       url: 'https://youtube.com/shorts/LD807v015t4',
