@@ -3,16 +3,16 @@ import { Play, ExternalLink } from 'lucide-react';
 const VideoSection = () => {
   const videos = [
     {
+      url: 'https://youtu.be/zUOqYg1C17w',
+      title: 'Lyric Video Demo',
+      description: 'Professional lyric video demonstration with animated text and visual effects. Perfect synchronisation between music and typography for engaging content.',
+      techniques: ['Typography Animation', 'Lyric Sync', 'Text Effects']
+    },
+    {
       url: 'https://youtu.be/glMgKYBMkAU',
       title: 'Music Video with VFX and Transitions',
       description: "High-energy music video featuring advanced visual effects and seamless transitions. Creative use of VFX to mimick the VHS opening credits of HBO's Succession.",
       techniques: ['Visual Effects', 'Transition Design', 'Music Video']
-    },
-    {
-      url: 'https://youtu.be/mnoADIY8eEQ',
-      title: 'Lyric Video Demo',
-      description: 'Professional lyric video demonstration with animated text and visual effects. Perfect synchronisation between music and typography for engaging content.',
-      techniques: ['Typography Animation', 'Lyric Sync', 'Text Effects']
     },
     {
       url: 'https://youtu.be/Irx1Tymn2gs',
