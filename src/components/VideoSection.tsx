@@ -3,16 +3,22 @@ import { Play, ExternalLink } from 'lucide-react';
 const VideoSection = () => {
   const videos = [
     {
-      url: 'https://youtu.be/zUOqYg1C17w',
+      url: 'https://youtu.be/glMgKYBMkAU',
+      title: 'Music Video with VFX and Transitions',
+      description: "High-energy music video featuring advanced visual effects and seamless transitions. Creative use of VFX to mimick the VHS opening credits of HBO's Succession.",
+      techniques: ['Visual Effects', 'Transition Design', 'Music Video']
+    },
+    {
+      url: 'https://youtu.be/9xH3KlkBNSw',
       title: 'Lyric Video Demo',
       description: 'Professional lyric video demonstration with animated text and visual effects. Perfect synchronisation between music and typography for engaging content.',
       techniques: ['Typography Animation', 'Lyric Sync', 'Text Effects']
     },
     {
-      url: 'https://youtu.be/glMgKYBMkAU',
-      title: 'Music Video with VFX and Transitions',
-      description: "High-energy music video featuring advanced visual effects and seamless transitions. Creative use of VFX to mimick the VHS opening credits of HBO's Succession.",
-      techniques: ['Visual Effects', 'Transition Design', 'Music Video']
+      url: 'https://youtu.be/XtZxUojvEQg',
+      title: 'Lyric Video Inside Text',
+      description: 'Creative lyric video using inside-text effects for modern music presentation and animation experimentation.',
+      techniques: ['Text Effects', 'Modern Animation', 'Music Video']
     },
     {
       url: 'https://youtu.be/Irx1Tymn2gs',
@@ -22,7 +28,7 @@ const VideoSection = () => {
     },
     {
       url: 'https://youtu.be/KSDkzQUe2is',
-      title: 'Climate Protest Summary Subtitled',
+      title: 'Short Form Activist Content',
       description: 'Documentary-style summary of climate activism with informative subtitles. Powerful storytelling focused on environmental awareness and social impact.',
       techniques: ['Documentary Style', 'Subtitle Integration', 'Social Impact']
     },
@@ -31,12 +37,6 @@ const VideoSection = () => {
       title: 'Multi-Angle Piano with Karaoke',
       description: 'Piano performance captured from multiple angles with karaoke-style lyrics. Professional multi-camera editing showcasing musical performance with sing-along elements.',
       techniques: ['Multi-Angle', 'Piano Performance', 'Karaoke Style']
-    },
-    {
-      url: 'https://youtube.com/shorts/LD807v015t4',
-      title: 'Short-Form Activist Content',
-      description: 'Impactful short-form content designed for social media activism. Concise messaging with powerful visuals optimised for maximum engagement and social change.',
-      techniques: ['Activism', 'Short-Form', 'Social Media']
     }
   ];
 

@@ -21,7 +21,7 @@ const VideoEditing = () => {
         <ContactSection />
       </main>
       <footer className="py-8 px-4 text-center border-t border-border glass-card">
-        <p className="text-muted-foreground">© 2024 Jaydee Designs.</p>
+        <p className="text-muted-foreground">© 2024 Jonny Dale.</p>
       </footer>
     </div>
   );
