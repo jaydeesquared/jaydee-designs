@@ -3,28 +3,28 @@ import { Play, ExternalLink } from 'lucide-react';
 const VideoSection = () => {
   const videos = [
     {
-      url: 'https://youtu.be/glMgKYBMkAU',
-      title: 'Music Video with VFX and Transitions',
-      description: "High-energy music video featuring advanced visual effects and seamless transitions. Creative use of VFX to mimick the VHS opening credits of HBO's Succession.",
-      techniques: ['Visual Effects', 'Transition Design', 'Music Video']
-    },
-    {
-      url: 'https://youtu.be/9xH3KlkBNSw',
-      title: 'Lyric Video Demo',
-      description: 'Professional lyric video demonstration with animated text and visual effects. Perfect synchronisation between music and typography for engaging content.',
-      techniques: ['Typography Animation', 'Lyric Sync', 'Text Effects']
-    },
-    {
       url: 'https://youtu.be/XtZxUojvEQg',
       title: 'Lyric Video Inside Text',
       description: 'Creative lyric video using inside-text effects for modern music presentation and animation experimentation.',
       techniques: ['Text Effects', 'Modern Animation', 'Music Video']
     },
     {
+      url: 'https://youtu.be/glMgKYBMkAU',
+      title: 'Music Video with VFX and Transitions',
+      description: "High-energy music video featuring advanced visual effects and seamless transitions. Creative use of VFX to mimick the VHS opening credits of HBO's Succession.",
+      techniques: ['Visual Effects', 'Transition Design', 'Music Video']
+    },
+    {
       url: 'https://youtu.be/Irx1Tymn2gs',
       title: 'Karaoke Subtitled Wedding Video',
       description: 'Wedding celebration video with karaoke subtitles and emotional moments. Creating memorable keepsakes with professional subtitle integration and heartfelt editing.',
       techniques: ['Subtitle Design', 'Wedding Editing', 'Emotional Flow']
+    },
+    {
+      url: 'https://youtu.be/9xH3KlkBNSw',
+      title: 'Lyric Video Demo',
+      description: 'Professional lyric video demonstration with animated text and visual effects. Perfect synchronisation between music and typography for engaging content.',
+      techniques: ['Typography Animation', 'Lyric Sync', 'Text Effects']
     },
     {
       url: 'https://youtu.be/KSDkzQUe2is',
