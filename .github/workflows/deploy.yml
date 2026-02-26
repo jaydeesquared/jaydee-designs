@@ -24,6 +24,12 @@ jobs:
     - name: Build
       run: npm run build
 
+    - name: Update base path for GitHub Pages
+      run: |
+        # Update asset paths in HTML files for GitHub Pages subdirectory
+        find dist -name "*.html" -exec sed -i 's|href="/|href="/jaydee-designs/|g' {} \;
+        find dist -name "*.html" -exec sed -i 's|src="/|src="/jaydee-designs/|g' {} \;
+
     - name: Setup Pages
       uses: actions/configure-pages@v4
 

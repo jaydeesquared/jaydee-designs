@@ -24,7 +24,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/jaydee-designs/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/jaydee-designs/favicon-16x16.png">
     <link rel="manifest" href="/jaydee-designs/site.webmanifest">
-    <script type="module" crossorigin src="/jaydee-designs/assets/index-Cwg7bsUf.js"></script>
+    <script type="module" crossorigin src="/jaydee-designs/assets/index-BUML3RqT.js"></script>
     <link rel="stylesheet" crossorigin href="/jaydee-designs/assets/index-_fZR7oI6.css">
 </head>
 
@@ -39,5 +39,21 @@
         <textarea name="message"></textarea>
     </form>
     <div id="root"></div>
+    
+    <script>
+        // GitHub Pages client-side routing fix
+        (function() {
+            var path = window.location.pathname;
+            var search = window.location.search;
+            var hash = window.location.hash;
+            var basePath = '/jaydee-designs/';
+            
+            // If we're on GitHub Pages and not at the root, redirect to root with the path
+            if (window.location.hostname === 'jaydeesquared.github.io' && path !== basePath && path !== '/') {
+                // Redirect to the base path and let React Router handle the routing
+                window.location.replace(basePath + '#' + path.replace(basePath, '/') + search + hash);
+            }
+        })();
+    </script>
 </body>
 </html>
