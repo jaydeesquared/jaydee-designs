@@ -16,4 +16,9 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  base: mode === 'production' ? '/jaydee-designs/' : '/',
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+  },
 }));
