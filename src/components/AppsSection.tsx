@@ -7,7 +7,7 @@ const AppsSection = () => {
             Apps
           </h2>
           <div className="text-xl text-muted-foreground max-w-4xl mx-auto space-y-6">
-           <p>Check out my <a href="https://jaydeedesigns.co.uk/FlagIt" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">FlagIt app</a> for a preview of my app development capabilities.</p>
+           <p>Check out my <a href="https://jaydeedesigns.co.uk/FlagIt/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">FlagIt app</a> for a preview of my app development capabilities.</p>
             <p>More App Previews coming soon.</p>
           </div>
         </div>
